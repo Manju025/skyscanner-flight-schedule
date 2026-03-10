@@ -1,0 +1,68 @@
+@import '@skyscanner/backpack-web/bpk-mixins';
+
+@mixin container {
+  max-width: $bpk-breakpoint-desktop;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+
+  &__header {
+    padding: 40px;
+    background-color: $bpk-color-sky-blue;
+    background-image: $bpk-primary-gradient;
+    color: $bpk-color-white;
+
+    @include bpk-box-shadow-sm;
+
+    @include bpk-breakpoint-mobile {
+      padding: 18px;
+      width: 485px;
+    }
+  }
+
+  &__header-inner {
+    @include container;
+  }
+
+  &__main {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    @include container;
+
+    @include bpk-breakpoint-mobile {
+      padding: 32px;
+    }
+  }
+
+  &__input {
+    width: 500px;
+
+    @include bpk-breakpoint-mobile {
+      width: 330px;
+    }
+  }
+
+
+  &__calender {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    @include bpk-box-shadow-sm;
+    @include bpk-breakpoint-mobile {
+      width: 330px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}
