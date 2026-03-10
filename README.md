@@ -5,9 +5,9 @@
 > so please refer to [it's documentation](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md)
 > for more usage information.
 
-# [Skyscanner Flight Schedule ~Forage]
+# Skyscanner Flight Schedule
 
-[_Add a brief description of your project here._]
+A React application for flight scheduling built with Skyscanner's Backpack design system. This app allows users to select dates for flight bookings using an interactive calendar component.
 
 ## npm script commands
 
